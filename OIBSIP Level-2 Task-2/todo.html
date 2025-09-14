@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body class="bg-gradient-to-br from-purple-600 to-blue-500 flex items-center justify-center min-h-screen p-4">
+
+    <div class="w-full max-w-md mx-auto bg-white rounded-2xl shadow-2xl p-6 md:p-8">
+        <div class="text-center mb-8">
+            <h1 class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">My To-Do List</h1>
+            <p class="text-gray-600 mt-2">Add your tasks and stay organized.</p>
+        </div>
+
+        <div class="flex gap-3 mb-6">
+            <input type="text" id="taskInput" placeholder="Add a new task..." class="flex-grow w-full px-4 py-3 text-gray-700 bg-gray-100 border-2 border-transparent rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition">
+            <button id="addTaskBtn" class="px-6 py-3 font-semibold text-white bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg hover:from-purple-600 hover:to-pink-600 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50 transition shadow-lg transform hover:scale-105">Add</button>
+        </div>
+
+        <ul id="taskList" class="space-y-3">
+        </ul>
+    </div>
+
+    
+    <script src="todo.js"></script>
+</body>
+</html>
+
