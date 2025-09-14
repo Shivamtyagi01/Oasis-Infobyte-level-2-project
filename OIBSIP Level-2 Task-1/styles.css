@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #d4e3e4;
+    width: 100%;
+}
+.calculator{
+    background-color: black;
+    padding: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 6px;
+    margin-top: 45px;
+}
+#result{
+    width: 100%;
+    padding: 9px;
+    font-size: 24px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5) inset;
+
+}
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+    margin-top: 27px;
+}
+button{
+    padding: 10px;
+    font-size: 25px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+    border-radius: 5px;
+    transition: background-color 0.4s ease;
+}
+button:hover{
+    background-color: rgba(128, 128, 128, 0.774);
+    color: white;
+}
+.clear{
+    background-color: rgb(202, 8, 8);
+    color: white;
+}
+.clear:hover{
+    background-color: red;
+}
+.del{
+    background-color: rgb(202, 8, 8);
+    color: white;
+}
+.del:hover{
+    background-color: red;
+}
+.op{
+    background-color: rgba(255, 136, 0, 0.999);
+}
+.op:hover{
+    color: white;
+    background-color: rgb(245, 85, 11);
+}
+.equal{
+    background-color: rgb(0, 174, 255);
+    grid-row: span 2;
+    color:aliceblue;
+}
+.equal:hover{
+    background-color: aqua;
+    color: black;
+}
